@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V Krishna Vamshi | Mechanical Engineer &amp; Designer</title>
+<meta name="description" content="Portfolio of V Krishna Vamshi: digital art, editorial illustration, visual identity, environmental design and engineering prototypes.">
+<meta name="theme-color" content="#dde7d9">
+
+<!-- Link preview (WhatsApp, Instagram, LinkedIn). After publishing, change the url below to your real site address. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="V Krishna Vamshi | Mechanical Engineer &amp; Designer">
+<meta property="og:description" content="Digital art, editorial illustration, visual identity and environmental design.">
+<meta property="og:image" content="images/hero-portrait.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23dde7d9'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' font-family='Arial' fill='%231f2d22'%3EV%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<style>
+/* ==========================================================
+   EDIT HERE: colors, fonts and spacing for the whole page
+   ========================================================== */
+:root {
+  --hero-bg: #dde7d9;
+  --hero-name: #1f2d22;      /* big name. Use #ffffff to match the original Canva look */
+  --hero-text: #2d3f31;      /* role + links in the green section */
+  --dark-bg: #000000;
+  --dark-text: #ffffff;
+  --muted: rgba(255,255,255,.72);
+
+  --font-sans: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+
+  --pad-x: clamp(20px, 6.2vw, 90px);   /* left/right page padding */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--dark-bg);
+  color: var(--dark-text);
+  font-family: var(--font-serif);
+  font-weight: 300;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-underline-offset: 3px; }
+a:hover { opacity: .8; }
+a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+h1, h2, h3 { font-family: var(--font-sans); font-weight: 400; margin: 0; }
+
+/* ---------- HERO ---------- */
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  padding: clamp(36px, 5vw, 70px) var(--pad-x) clamp(30px, 4vw, 60px);
+}
+.hero h1 {
+  color: var(--hero-name);
+  font-size: clamp(38px, 8.4vw, 130px);
+  line-height: 1;
+  letter-spacing: 0.005em;
+  font-weight: 300;
+}
+.hero .role {
+  font-family: var(--font-sans);
+  font-size: clamp(16px, 1.8vw, 24px);
+  margin: 8px 0 0;
+}
+.hero-body {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(24px, 6vw, 90px);
+  align-items: center;
+  margin-top: clamp(10px, 2vw, 24px);
+}
+.hero-body img { width: min(100%, 460px); margin-left: clamp(0px, 3vw, 40px); }
+.hero-links { font-size: clamp(18px, 2.2vw, 30px); line-height: 1.4; }
+.hero-links p { margin: 0 0 1.4em; }
+.hero-links a { font-size: .8em; }
+
+/* ---------- SHARED HEADINGS ---------- */
+.philosophy h2, .art h2, .what h2, .contact h2 {
+  font-size: clamp(32px, 4.4vw, 62px);
+  line-height: 1.05;
+}
+
+/* ---------- PHILOSOPHY ---------- */
+.philosophy {
+  padding: clamp(56px, 8vw, 120px) var(--pad-x);
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: clamp(24px, 5vw, 80px);
+}
+.philosophy p {
+  margin: clamp(0px, 3vw, 50px) 0 0;
+  font-size: clamp(18px, 1.9vw, 27px);
+  line-height: 1.3;
+  max-width: 34em;
+}
+
+/* ---------- ART ---------- */
+.art { padding: 0 var(--pad-x) clamp(60px, 8vw, 110px); }
+.art-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: clamp(16px, 3vw, 40px);
+  margin-top: clamp(20px, 3vw, 40px);
+  align-items: start;
+}
+.art figure { margin: 0; }
+.art figcaption { font-size: clamp(15px, 1.5vw, 21px); margin-top: 10px; color: var(--muted); }
+.col { display: flex; flex-direction: column; gap: clamp(16px, 3vw, 40px); }
+.col-1 .eye    { width: 75%; margin-top: clamp(0px, 2vw, 30px); }
+.col-1 .brows  { width: 100%; margin-left: -6%; }
+.col-2 .trees  { width: 85%; margin: 0 auto; }
+.col-2 .stairs { width: 70%; margin: 0 auto; }
+.col-3 .pond   { width: 88%; margin: 0 auto; }
+.col-3 figcaption { text-align: center; }
+
+.art img { cursor: zoom-in; transition: transform .35s ease, filter .35s ease; }
+.art figure:hover img { transform: scale(1.03); filter: brightness(1.08); }
+
+/* ---------- QUOTE BANNER ---------- */
+.banner {
+  min-height: clamp(280px, 56vw, 770px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 40px var(--pad-x);
+  background-color: #1a1a1a;
+  background-image:
+    linear-gradient(rgba(0,0,0,.28), rgba(0,0,0,.28)),
+    url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner p {
+  margin: 0;
+  max-width: 19em;
+  font-size: clamp(26px, 5.2vw, 76px);
+  line-height: 1.2;
+  font-weight: 300;
+  text-shadow: 0 2px 24px rgba(0,0,0,.6);
+}
+
+/* ---------- WHAT I DO ---------- */
+.what { padding: clamp(56px, 8vw, 120px) var(--pad-x); }
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: clamp(24px, 12vw, 180px);
+  row-gap: clamp(32px, 5vw, 70px);
+  margin-top: clamp(32px, 5vw, 70px);
+}
+.services h3 { font-size: clamp(18px, 1.7vw, 24px); line-height: 1.2; margin-bottom: 14px; }
+.services p { margin: 0; font-size: clamp(14px, 1.15vw, 17px); line-height: 1.3; max-width: 25em; color: var(--muted); }
+
+/* ---------- CONTACT ---------- */
+.contact {
+  padding: clamp(40px, 6vw, 90px) var(--pad-x) 0;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(24px, 5vw, 80px);
+  align-items: end;
+}
+.contact dl { margin: clamp(10px, 1.5vw, 20px) 0 clamp(30px, 4vw, 60px); }
+.contact dt { font-family: var(--font-sans); font-size: clamp(16px, 1.5vw, 21px); margin-top: 22px; }
+.contact dd { margin: 4px 0 0; font-size: clamp(13px, 1.15vw, 17px); overflow-wrap: anywhere; color: var(--muted); }
+.contact dd a:hover { color: #fff; opacity: 1; }
+.contact .photo { width: min(100%, 400px); justify-self: center; }
+
+/* ---------- CREDIT ---------- */
+.credit {
+  text-align: center;
+  padding: 28px var(--pad-x) 34px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  letter-spacing: .04em;
+  color: rgba(255,255,255,.7);
+}
+
+/* ---------- LIGHTBOX ---------- */
+dialog.lightbox {
+  border: 0; padding: 0; background: transparent;
+  max-width: 94vw; max-height: 92vh; overflow: visible;
+}
+dialog.lightbox::backdrop { background: rgba(0,0,0,.88); }
+.lightbox img { max-height: 88vh; max-width: 94vw; width: auto; margin: 0 auto; border-radius: 4px; cursor: zoom-out; }
+.lightbox button {
+  position: absolute; top: -40px; right: 0;
+  background: none; border: 0; color: #fff; font: 400 28px/1 var(--font-sans); cursor: pointer;
+}
+
+/* ---------- SCROLL REVEAL (only if JS is on) ---------- */
+.js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+.js .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .art img { transition: none; }
+}
+
+@media (min-width: 761px) { .hero h1 { white-space: nowrap; } }
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 760px) {
+  .hero-body, .philosophy, .contact { grid-template-columns: 1fr; }
+  .hero-body img { margin-left: 0; width: min(100%, 360px); }
+  .art-grid { grid-template-columns: 1fr 1fr; }
+  .col-3 { grid-column: 1 / -1; }
+  .col-3 .pond { width: 70%; }
+  .services { grid-template-columns: 1fr; }
+  .contact .photo { justify-self: start; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <h1>V KRISHNA VAMSHI</h1>
+  <p class="role">Mechanical Engineer</p>
+
+  <div class="hero-body">
+    <img src="images/hero-portrait.png" width="463" height="461" alt="Portrait artwork of V Krishna Vamshi">
+    <div class="hero-links">
+      <p>Digital Art / Editorial Illustration<br>
+         Visual Identity / Digital Assets<br>
+         Environmental Design</p>
+      <p><a href="#contact">Live life With Love</a></p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="philosophy reveal" aria-labelledby="philosophy-title">
+  <h2 id="philosophy-title">My Design<br>Philosophy</h2>
+  <p>Form does not merely follow function; form shapes the mind that witnesses it. Every line we draw is a quiet architecture of human emotion, and every structure we build is a mirror reflecting the universe back to itself. I treat design as a bridge between the logic of the machine and the infinite depth of the psyche. Whether shaping a space, a visual identity, or a concept, I approach the work with deliberate intention—knowing that even the smallest detail can hold an entire world, and the truest designs are those that outlast time.</p>
+</section>
+
+<!-- ============ ART ============ -->
+<section class="art reveal" aria-labelledby="art-title">
+  <h2 id="art-title">My ART</h2>
+
+  <div class="art-grid">
+    <div class="col col-1">
+      <figure class="eye">
+        <img src="images/art-eye.png" width="245" height="184" loading="lazy" decoding="async" alt="Painted close-up of an eye">
+      </figure>
+      <figure class="brows">
+        <img src="images/art-intentional.png" width="327" height="204" loading="lazy" decoding="async" alt="Pencil drawing of a face with eyes and brows">
+        <figcaption>Intentional Design</figcaption>
+      </figure>
+    </div>
+
+    <div class="col col-2">
+      <figure class="trees">
+        <img src="images/art-trees.png" width="284" height="287" loading="lazy" decoding="async" alt="Two teal trees above a flower field">
+        <figcaption>Symbolism &amp; Pattern</figcaption>
+      </figure>
+      <figure class="stairs">
+        <img src="images/art-stairs.png" width="221" height="221" loading="lazy" decoding="async" alt="Illustration of a person in a black hoodie on stairs among flowers">
+      </figure>
+    </div>
+
+    <div class="col col-3">
+      <figure class="pond">
+        <img src="images/art-pond.png" width="295" height="639" loading="lazy" decoding="async" alt="Illustration of a woman in a blue saree on a wooden bridge, reflected in a lily pond under a comet">
+        <figcaption>Fun &amp; Functional Branding</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE BANNER ============ -->
+<section class="banner reveal" aria-label="Quote">
+  <p>A single breath holds a thousand universes, and every heartbeat is a new creation unfolding in the dark.</p>
+</section>
+
+<!-- ============ WHAT I DO ============ -->
+<section class="what reveal" aria-labelledby="what-title">
+  <h2 id="what-title">What I Do</h2>
+  <div class="services">
+    <div>
+      <h3>Empathy-Driven Brand &amp; Environmental Design</h3>
+      <p>Building structured visual identities and spatial layouts that influence human perception, behavior, and emotional well-being by merging design with human psychology.</p>
+    </div>
+    <div>
+      <h3>Prototyping &amp; Spatial Architecture</h3>
+      <p>Applying mechanical engineering principles and AutoCAD to design functional, real-world systems like automated elevators and sustainable energy models.</p>
+    </div>
+    <div>
+      <h3>Visual Psychology &amp; Illustration</h3>
+      <p>Crafting digital art and narrative concepts that translate complex human emotions, subconscious thoughts, and psychological states into striking visual forms.</p>
+    </div>
+    <div>
+      <h3>Electronics Exploration</h3>
+      <p>Investigating physical circuitry, hunting down how electronic devices function, and analyzing hardware systems from the inside out.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ CONTACT ============ -->
+<footer class="contact reveal" id="contact">
+  <div>
+    <h2>Get in Touch</h2>
+    <dl>
+      <dt>Instagram</dt>
+      <dd><a href="https://www.instagram.com/v.krishna_vamshi" target="_blank" rel="noopener">https://www.instagram.com/v.krishna_vamshi</a></dd>
+
+      <dt>Linkedin</dt>
+      <dd><a href="https://www.linkedin.com/in/vamshi-mmi" target="_blank" rel="noopener">https://www.linkedin.com/in/vamshi-mmi</a></dd>
+
+      <dt>Youtube</dt>
+      <dd><a href="https://www.youtube.com/@krishnavamshivalluri8399" target="_blank" rel="noopener">https://www.youtube.com/@krishnavamshivalluri8399</a></dd>
+
+      <dt>Email</dt>
+      <dd>
+        <a href="mailto:krishnavamshi.srt@gmail.com">krishnavamshi.srt@gmail.com</a><br>
+        <a href="mailto:krishnavamshiv@icloud.com">krishnavamshiv@icloud.com</a><br>
+        <a href="mailto:gamerprince2ki@gmail.com">gamerprince2ki@gmail.com</a>
+      </dd>
+
+      <dt>Phone</dt>
+      <dd><a href="tel:+919490482944">+91 9490482944</a></dd>
+    </dl>
+  </div>
+  <img class="photo" src="images/contact-photo.png" width="402" height="508" loading="lazy" decoding="async" alt="Photo of V Krishna Vamshi">
+</footer>
+
+<div class="credit">Designed by V Krishna Vamshi</div>
+
+<!-- Click an artwork to view it larger -->
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged artwork">
+  <button type="button" aria-label="Close">&times;</button>
+  <img alt="">
+</dialog>
+
+<script>
+/* Fade-in on scroll */
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+
+/* Click-to-enlarge for the art images */
+(function () {
+  var dlg = document.getElementById('lightbox');
+  if (!dlg || typeof dlg.showModal !== 'function') return;
+  var big = dlg.querySelector('img');
+  document.querySelectorAll('.art img').forEach(function (img) {
+    img.addEventListener('click', function () {
+      big.src = img.currentSrc || img.src;
+      big.alt = img.alt;
+      dlg.showModal();
+    });
+  });
+  dlg.addEventListener('click', function () { dlg.close(); });
+})();
+</script>
+
+</body>
+</html>
